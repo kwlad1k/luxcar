@@ -1,3 +1,3 @@
-It's my profile 
+It's PathossCar
 
-[Портфолио](https://kwlad1k.github.io/portfolio/ "profile")
+[Портфолио](https://kwlad1k.github.io/luxcar/ "PathossCar")
