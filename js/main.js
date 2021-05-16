@@ -22,3 +22,20 @@ for (let anchor of anchors) {
 
   })
 }
+//Проверка поля номера телефона
+function validateNumber(event) {
+  var keyCode = event.keyCode;
+  var excludedKeys = [8, 37, 39, 46];
+
+  if (!((keyCode >= 48 && keyCode <= 57) ||
+      (keyCode >= 96 && keyCode <= 105) ||
+      (excludedKeys.includes(keyCode)))) {
+    console.log("alphabets are not allowed");
+    event.preventDefault();
+
+  }
+
+  console.log("keycode: " + keyCode);
+}
+
+
