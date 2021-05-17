@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PathossCars</title>
     <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/img/icon/main-icon.svg"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
@@ -113,10 +118,9 @@
               />
               <h3 class="advantages-title">Только новые</h3>
               <p class="technologies-text">
-                Все машины, которые предлагает в аренду компания
-                PathossCars.Парк автомобилей постоянно обновляется, так как по
-                специально разработанным стандартам машины нашей компании не
-                должны эксплуатироваться более двух лет.
+                Парк автомобилей постоянно обновляется, так как по специально
+                разработанным стандартам машины нашей компании не должны
+                эксплуатироваться более двух лет.
               </p>
             </div>
             <div class="advantages-item bank-pig">
@@ -579,18 +583,81 @@
             />
             <input
               type="text"
-              maxlength="12"
+              maxlength="11"
               onkeydown="return validateNumber(event)"
-              required
               class="input input-phone"
               placeholder="Ваш телефон"
             />
             <input
               type="text"
-              class="datepicker-here"
+              class="datepicker-here input input-calendar"
               data-position="right top"
+              placeholder="Выбор даты"
             />
-            <button class="button form-button">Заказать</button>
+            <input
+              type="text"
+              class="input input-geo"
+              placeholder="Адрес подачи"
+            />
+            <select
+              class="form-select input input-car"
+              aria-label="Default select example"
+            >
+              <option selected>Выбор авто</option>
+              <option value="1">Porsche Taycan Turbo</option>
+              <option value="2">Lamborghini Urus</option>
+              <option value="3">Mercedes S 560 W222</option>
+              <option value="1">Mercedes G 63 AMG</option>
+              <option value="2">BMW M5 Competition</option>
+              <option value="3">BMW X6 M Competition</option>
+            </select>
+            <!-- <button class="button form-button">Оформить</button> -->
+            <!-- Button trigger modal -->
+            <button
+              class="button form-button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Оформить
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Заказ оформлен
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">Данные о заказе:</div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="modal-button button-modal"
+                      data-bs-dismiss="modal"
+                    >
+                      Отмена
+                    </button>
+                    <button type="button" class="modal-button button-modal">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </form>
 
           <div
@@ -601,7 +668,7 @@
               <div class="contacts-phone">
                 <h4 class="contacts-title">Телефон</h4>
                 <a href="tel:+79992484958" class="contacts-link"
-                  >+7 999 248-49-58</a
+                  >+7 999 999-99-99</a
                 >
               </div>
               <!-- /.contacts-phone -->

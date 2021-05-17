@@ -98,6 +98,18 @@ body {
   text-transform: uppercase;
   font-weight: bold;
 }
+.button-modal {
+  background: linear-gradient(180deg, #fdde76 0%, #ffbb01 100%);
+  box-shadow: 0px 4px 0px #b68500;
+  border: none;
+  border-radius: 5px 5px 10px 10px;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 35%;
+}
 
 .button a {
   color: #000 !important;
@@ -244,7 +256,13 @@ body {
 .project-icon {
   margin-right: 15px;
 }
-
+.modal-content {
+  background: #ffffff;
+  box-shadow: -5px 5px 0px #ffc41d;
+  border-radius: 5px;
+  max-width: auto;
+  padding: 40px 48px;
+}
 /* contacts */
 .contacts-form {
   background: #ffffff;
@@ -256,6 +274,15 @@ body {
 
 .form-title {
   font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.form-select {
   font-size: 18px;
   line-height: 28px;
   text-align: center;
@@ -290,11 +317,28 @@ body {
   background-repeat: no-repeat;
   background-position: center left 20px;
 }
+.input-calendar {
+  margin-bottom: 26px;
+  background-image: url(../img/icon/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: center left 20px;
+}
+.input-car {
+  margin-bottom: 26px;
+  background-image: url(../img/icon/car.svg);
+  background-repeat: no-repeat;
+  background-position: center left 20px;
+}
+.input-geo {
+  margin-bottom: 18px;
+  background-image: url(../img/icon/geo-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center left 20px;
+}
 
 .form-button {
   width: 100%;
 }
-
 .contacts-block {
   display: flex;
   align-items: center;
@@ -349,7 +393,11 @@ body {
   margin-top: 70px;
 }
 
-/* Эффекты тест */
+/* Модалка */
+.modal-body,
+.modal-title {
+  color:#000;
+}
 
 /* responsive */
 @media (max-width: 1100px) {
@@ -388,6 +436,7 @@ body {
     flex-direction: column;
   }
   .project-image {
+    width: 100%;
     margin-bottom: 45px;
   }
 
