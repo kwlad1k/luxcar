@@ -38,4 +38,10 @@ function validateNumber(event) {
   console.log("keycode: " + keyCode);
 }
 
+$('.my-datepicker').data('datepicker')
+
+$('.my-datepicker').datepicker({
+    // Можно выбрать тольо даты, идущие за сегодняшним днем, включая сегодня
+    minDate: new Date()
+})
 
