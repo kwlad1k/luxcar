@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PathossCars</title>
     <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/img/icon/main-icon.svg"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
@@ -113,10 +118,9 @@
               />
               <h3 class="advantages-title">Только новые</h3>
               <p class="technologies-text">
-                Все машины, которые предлагает в аренду компания
-                PathossCars.Парк автомобилей постоянно обновляется, так как по
-                специально разработанным стандартам машины нашей компании не
-                должны эксплуатироваться более двух лет.
+                Парк автомобилей постоянно обновляется, так как по специально
+                разработанным стандартам машины нашей компании не должны
+                эксплуатироваться более двух лет.
               </p>
             </div>
             <div class="advantages-item bank-pig">
@@ -587,10 +591,23 @@
             />
             <input
               type="text"
-              class="datepicker-here"
+              class="datepicker-here input input-calendar"
               data-position="right top"
+              placeholder="Выбор даты"
             />
-            <button class="button form-button">Заказать</button>
+            <select
+              class="form-select input input-car"
+              aria-label="Default select example"
+            >
+              <option selected>Выбор авто</option>
+              <option value="1">Porsche Taycan Turbo</option>
+              <option value="2">Lamborghini Urus</option>
+              <option value="3">Mercedes S 560 W222</option>
+              <option value="1">Mercedes G 63 AMG</option>
+              <option value="2">BMW M5 Competition</option>
+              <option value="3">BMW X6 M Competition</option>
+            </select>
+            <button class="button form-button">Оформить</button>
           </form>
 
           <div
@@ -601,7 +618,7 @@
               <div class="contacts-phone">
                 <h4 class="contacts-title">Телефон</h4>
                 <a href="tel:+79992484958" class="contacts-link"
-                  >+7 999 248-49-58</a
+                  >+7 999 999-99-99</a
                 >
               </div>
               <!-- /.contacts-phone -->

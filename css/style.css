@@ -264,6 +264,15 @@ body {
   margin-bottom: 30px;
 }
 
+.form-select {
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
 .input {
   background: #f8f8f8;
   border: none;
@@ -287,6 +296,18 @@ body {
 .input-phone {
   margin-bottom: 26px;
   background-image: url(../img/icon/phone-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center left 20px;
+}
+.input-calendar {
+  margin-bottom: 26px;
+  background-image: url(../img/icon/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: center left 20px;
+}
+.input-car {
+  margin-bottom: 26px;
+  background-image: url(../img/icon/car.svg);
   background-repeat: no-repeat;
   background-position: center left 20px;
 }
@@ -349,8 +370,6 @@ body {
   margin-top: 70px;
 }
 
-/* Эффекты тест */
-
 /* responsive */
 @media (max-width: 1100px) {
   .hero-avatar {
@@ -388,6 +407,7 @@ body {
     flex-direction: column;
   }
   .project-image {
+    width: 100%;
     margin-bottom: 45px;
   }
 
