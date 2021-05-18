@@ -573,20 +573,21 @@
         <div class="contacts-block">
           <form
             action="#"
+            id="form"
             class="contacts-form wow animate__animated animate__fadeInLeft"
           >
             <h4 class="form-title">Оформить прокат автомобиля</h4>
             <input
               type="text"
-              class="input input-name"
-              placeholder="Ваше имя"
+              class="input input-name _req"
+              placeholder="Ваше имя*"
             />
             <input
               type="text"
               maxlength="11"
               onkeydown="return validateNumber(event)"
               class="input input-phone"
-              placeholder="Ваш телефон"
+              placeholder="Ваш телефон* _req"
             />
             <input
               type="text"

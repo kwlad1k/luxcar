@@ -303,7 +303,10 @@ body {
   line-height: 28px;
   color: #949494;
 }
-
+.input:focus{
+  box-shadow: 0 0 15px #fdde76;
+  
+}
 .input-name {
   margin-bottom: 18px;
   background-image: url(../img/icon/user-icon.svg);
@@ -392,7 +395,6 @@ body {
   color: #a5a5a5;
   margin-top: 70px;
 }
-
 /* Модалка */
 .modal-body,
 .modal-title {
