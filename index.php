@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -572,8 +571,7 @@
         </h2>
         <div class="contacts-block">
           <form
-            action="post.php"
-            method="POST"
+            action="post.php" method="POST"
             id="form"
             class="contacts-form wow animate__animated animate__fadeInLeft"
           >
@@ -588,7 +586,7 @@
               maxlength="11"
               onkeydown="return validateNumber(event)"
               class="input input-phone"
-              placeholder="Ваш телефон*"
+              placeholder="Ваш телефон* _req"
             />
             <input
               type="text"
