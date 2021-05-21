@@ -578,11 +578,13 @@
             <h4 class="form-title">Оформить прокат автомобиля</h4>
             <input
               type="text"
+              name="user_name"
               class="input input-name _req"
               placeholder="Ваше имя*"
             />
             <input
               type="text"
+              name="phone"
               maxlength="11"
               onkeydown="return validateNumber(event)"
               class="input input-phone"
@@ -590,16 +592,19 @@
             />
             <input
               type="text"
+              name="date"
               class="datepicker-here input input-calendar"
               data-position="right top"
               placeholder="Выбор даты"
             />
             <input
               type="text"
+              name="location"
               class="input input-geo"
               placeholder="Адрес подачи"
             />
             <select
+              name="car"
               class="form-select input input-car"
               aria-label="Default select example"
             >
@@ -614,6 +619,7 @@
             <!-- <button class="button form-button">Оформить</button> -->
             <!-- Button trigger modal -->
             <button
+            type="submit"
               class="button form-button"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
