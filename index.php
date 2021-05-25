@@ -571,35 +571,37 @@
         </h2>
         <div class="contacts-block">
           <form
-            action="post.php" method="POST"
+            action="/post.php" method="POST"
             id="form"
             class="contacts-form wow animate__animated animate__fadeInLeft"
           >
             <h4 class="form-title">Оформить прокат автомобиля</h4>
             <input
+              required
               type="text"
               name="user_name"
               class="input input-name _req"
               placeholder="Ваше имя*"
             />
             <input
+              required
               type="text"
               name="phone"
               maxlength="11"
               onkeydown="return validateNumber(event)"
               class="input input-phone"
-              placeholder="Ваш телефон* _req"
+              placeholder="Ваш телефон*"
             />
             <input
               type="text"
-              name="date"
+              name="date_form"
               class="datepicker-here input input-calendar"
               data-position="right top"
               placeholder="Выбор даты"
             />
             <input
               type="text"
-              name="location"
+              name="location_form"
               class="input input-geo"
               placeholder="Адрес подачи"
             />
@@ -616,19 +618,20 @@
               <option value="2">BMW M5 Competition</option>
               <option value="3">BMW X6 M Competition</option>
             </select>
+            <input class="button form-button" type="submit" value="Оформить">
             <!-- <button class="button form-button">Оформить</button> -->
             <!-- Button trigger modal -->
-            <button
+            <!-- <button
             type="submit"
               class="button form-button"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
               Оформить
-            </button>
+            </button> -->
 
             <!-- Modal -->
-            <div
+            <!-- <div
               class="modal fade"
               id="exampleModal"
               tabindex="-1"
@@ -663,7 +666,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </form>
 
           <div
