@@ -22,7 +22,7 @@ if ($conn->connect_error) {
 echo "Connected successfully";
 
 $sql = "INSERT INTO rent_info (userName, phoneNumber, date_form, location_form, chooseCar)
-VALUES ('$userName', '$phoneNumber', '$date', '$geo' '$car')";
+VALUES ('" . $userName . "','" . $phoneNumber . "','" . $date . "','" . $geo . "','" . $car . "')";
 
 if ($conn->query($sql) === TRUE) {
   echo "Автомобиль успешно заказан";

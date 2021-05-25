@@ -89,7 +89,16 @@ $( document ).ready(function() {
     alert('Ваш заказ оформлен!');
   });
 });
+// Дата пикер
+// Инициализация
+$('.my-datepicker').datepicker([options])
 
+$('.my-datepicker').datepicker({
+    // Можно выбрать тольо даты, идущие за сегодняшним днем, включая сегодня
+    minDate: new Date()
+})
+// Доступ к экземпляру объекта
+$('.my-datepicker').data('datepicker')
 
 
 
