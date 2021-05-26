@@ -572,36 +572,45 @@
         </h2>
         <div class="contacts-block">
           <form
-            action="/luxcar/post.php"
-            method="POST"
+            action="/post.php" method="POST"
             id="form"
             class="contacts-form wow animate__animated animate__fadeInLeft"
           >
             <h4 class="form-title">Оформить прокат автомобиля</h4>
             <input
+              required
               type="text"
-              class="input input-name _req"
+              name="user_name"
+              class="input input-name"
               placeholder="Ваше имя*"
             />
             <input
+              required
               type="text"
+              name="phone"
               maxlength="11"
               onkeydown="return validateNumber(event)"
               class="input input-phone"
               placeholder="Ваш телефон*"
             />
             <input
+              required
               type="text"
+              name="date_form"
+              id = "datepicker"
               class="datepicker-here input input-calendar"
               data-position="right top"
               placeholder="Выбор даты"
             />
             <input
+              required
               type="text"
+              name="location_form"
               class="input input-geo"
               placeholder="Адрес подачи"
             />
             <select
+              name="car"
               class="form-select input input-car"
               aria-label="Default select example"
             >
@@ -613,54 +622,7 @@
               <option value="2">BMW M5 Competition</option>
               <option value="3">BMW X6 M Competition</option>
             </select>
-            <input class="button form-button" type="submit" value="Оформить" />
-            <!-- <button class="button form-button">Оформить</button> -->
-            <!-- Button trigger modal -->
-            <!-- <button
-              class="button form-button"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              Оформить
-            </button> -->
-
-            <!-- Modal -->
-            <!-- <div
-              class="modal fade"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">
-                      Заказ оформлен
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">Данные о заказе:</div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="modal-button button-modal"
-                      data-bs-dismiss="modal"
-                    >
-                      Отмена
-                    </button>
-                    <button type="button" class="modal-button button-modal">
-                      Save changes
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div> -->
+            <input class="button form-button" type="submit" value="Оформить">
           </form>
 
           <div

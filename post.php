@@ -15,19 +15,20 @@ $dbname = "pathosscars";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-echo "Connected successfully";
+// // Check connection
+// if ($conn->connect_error) {
+//   die("Connection failed: " . $conn->connect_error);
+// }
+// echo "Connected successfully";
 
 $sql = "INSERT INTO rent_info (userName, phoneNumber, date_form, location_form, chooseCar)
 VALUES ('" . $userName . "','" . $phoneNumber . "','" . $date . "','" . $geo . "','" . $car . "')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "Автомобиль успешно заказан";
+  echo "Автомобиль успешно заказан!\nКлиент: $userName;\nНомер телефона: $phoneNumber;\nАдрес подачи: $geo;\nДата подачи: $date";
+  
 } else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
+  echo "Error: " . $sql . "\n" . $conn->error;
 }
 
 $conn->close();

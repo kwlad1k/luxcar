@@ -580,7 +580,7 @@
               required
               type="text"
               name="user_name"
-              class="input input-name _req"
+              class="input input-name"
               placeholder="Ваше имя*"
             />
             <input
@@ -593,13 +593,16 @@
               placeholder="Ваш телефон*"
             />
             <input
+              required
               type="text"
               name="date_form"
+              id = "datepicker"
               class="datepicker-here input input-calendar"
               data-position="right top"
               placeholder="Выбор даты"
             />
             <input
+              required
               type="text"
               name="location_form"
               class="input input-geo"
@@ -619,54 +622,6 @@
               <option value="3">BMW X6 M Competition</option>
             </select>
             <input class="button form-button" type="submit" value="Оформить">
-            <!-- <button class="button form-button">Оформить</button> -->
-            <!-- Button trigger modal -->
-            <!-- <button
-            type="submit"
-              class="button form-button"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              Оформить
-            </button> -->
-
-            <!-- Modal -->
-            <!-- <div
-              class="modal fade"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">
-                      Заказ оформлен
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">Данные о заказе:</div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="modal-button button-modal"
-                      data-bs-dismiss="modal"
-                    >
-                      Отмена
-                    </button>
-                    <button type="button" class="modal-button button-modal">
-                      Save changes
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div> -->
           </form>
 
           <div
