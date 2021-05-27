@@ -614,12 +614,12 @@
               aria-label="Default select example"
             >
               <option selected>Выбор авто</option>
-              <option value="1">Porsche Taycan Turbo</option>
-              <option value="2">Lamborghini Urus</option>
-              <option value="3">Mercedes S 560 W222</option>
-              <option value="1">Mercedes G 63 AMG</option>
-              <option value="2">BMW M5 Competition</option>
-              <option value="3">BMW X6 M Competition</option>
+              <option value="Porsche Taycan Turbo">Porsche Taycan Turbo</option>
+              <option value="Lamborghini Urus">Lamborghini Urus</option>
+              <option value="Mercedes S 560 W222">Mercedes S 560 W222</option>
+              <option value="Mercedes G 63 AMG">Mercedes G 63 AMG</option>
+              <option value="BMW M5 Competition">BMW M5 Competition</option>
+              <option value="BMW X6 M Competition">BMW X6 M Competition</option>
             </select>
             <input class="button form-button" type="submit" value="Оформить">
           </form>

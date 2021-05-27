@@ -25,7 +25,7 @@ $sql = "INSERT INTO rent_info (userName, phoneNumber, date_form, location_form, 
 VALUES ('" . $userName . "','" . $phoneNumber . "','" . $date . "','" . $geo . "','" . $car . "')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "Автомобиль успешно заказан!\nКлиент: $userName;\nНомер телефона: $phoneNumber;\nАдрес подачи: $geo;\nДата подачи: $date";
+  echo "Автомобиль успешно заказан!\nКлиент: $userName;\nНомер телефона: $phoneNumber;\nАдрес подачи: $geo;\nДата подачи: $date\nЗабронирован автомобиль: $car";
   
 } else {
   echo "Error: " . $sql . "\n" . $conn->error;
